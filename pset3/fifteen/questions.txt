@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+1. TODO From [3x3] to [9x9] dimensions. 
+2. TODO arrays, integers, files
+3. TODO greet
+4. TODO init, draw, move, won
