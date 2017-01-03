@@ -9,6 +9,7 @@
        
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 #include "helpers.h"
 
@@ -20,9 +21,16 @@ bool search(int value, int values[], int n)
     // TODO: implement a searching algorithm
    int max = n;
    int min = 0;
-   int need = 0;
-   while ( max > 0 ){
-       need = (max + min) /2;
+   int need = -1;
+   if ( value > values[n-1]) {
+       return false;
+   }
+   while ( need != 0 ){
+       
+       need = (int) floor((max + min) /2.0);
+       if ( (max == min+1) && (values[need] != value) ){
+           return false;
+       }
        if ( value < values[need] ){
            max = need;
        }
