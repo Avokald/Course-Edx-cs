@@ -1,0 +1,12 @@
+0.  TODO is an English word that refers to a lung disease that is otherwise known as silicosis. "An artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust."
+1.  TODO Required when need to know the usage of system data and runtime of process. 
+2.  TODO 16
+3.  TODO Maybe because it required less resources 
+4.  TODO Writes every character except digits into an array, increasing also the words counter. 
+         If the character is '\n' and is not first on the line, also writes it. 
+         If the counter of characters is more than its length, then programm will skip everything until new word's character is found, reseting index.
+         If the counter of characters is more than zero, but the new character is neither digit nor alphabetical, it means end of word. '\0' is added and words++.
+         Then the whole word is checked via check(). Data about the usage is stored.If check returned false, then misspeled word counter is increased and printed.
+         Index is reset to zero. The loop starts again.
+5.  TODO A lot more difficult to check each character creating complete "words". Inconsistency and problems with different data types: digits, escape-ch etc.
+6.  TODO Files inside of directory should not be changed and must stay the same throught the whole run of a programm.
