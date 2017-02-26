@@ -1,8 +1,5 @@
 def decrypt(pltext, key):
-    #key = str(input("Keyword: "))
     keylen = len(key)
-    #print("Plaintext: ", end="")
-    # = str(input())
     j = 0
     encText = ""
     for i in pltext:
@@ -26,19 +23,14 @@ def decrypt(pltext, key):
                 print("Error")
                 quit(2)
         else:
-            print("Error")
-            quit(1)
+            encText += i
     
         j = (j + 1)%keylen
     print("Result:", encText)
     return encText
 
 def encrypt(pltext, key):
-    #key = str(input("Keyword: "))
     keylen = len(key)
-    
-    #print("Plaintext: ", end="")
-    #pltext = str(input())
     j = 0
     encText = ""
     for i in pltext:
@@ -62,14 +54,10 @@ def encrypt(pltext, key):
                 print("Error")
                 quit(2)
         else:
-            print("Error")
-            quit(1)
-    
+            encText += i
         j = (j + 1)%keylen
     print("Result:", encText)
     return encText
-    
-    
     
 def main():
     text = str(input("Text: "))
